@@ -1,54 +1,101 @@
-<!Doctype <!DOCTYPE html>
-<html>
+<!--Responsive_Portfolio project, with Bootstrap-->
+<!DOCTYPE html>
+<html lang="en-us">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contact Thomas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+  <meta charset="UTF-8">
+  <title>Thomas A. Brown</title>
+
+  <!-- We need to bring in the bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
-<header>
-        <div class="name">Thomas A. Brown </div>
-        <a href="index.html">
-                <div class="link">About</div>
-                </a>
-                
-                <a href="portfolio.html">
-                <div class="link">Portfolio</div>
-                </a>
-        
-                <a href="contact.html">
-                <div class="link">Contact</div>
-               </a>
-       
-    </header>
+
 <body>
-        <section class="Main">
-                <h2>Contact Me</h2>
 
-        
-        </section>    
-        
-        <section class="aside">
+  <!-- NavBar (copied and pasted from WC3) -->
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+       <a class="navbar-brand">Thomas Brown</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+    <div class="container">
+        <!--<div class="main2">-->
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h2>About Me</h2>
+                     <div class="panel-body">
+                            <form action="action_page.php">
 
-                <h2>Connect with Me</h2>
-        
+                                    <label for="fname">Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="lastname" placeholder="example@gmail.com">
+                    
+                                
+                                    <label for="subject">Message</label>
+                                    <textarea id="subject" name="subject"></textarea>
+                                
+                                    <input type="submit" value="Submit">
+                                
+                                  </form>    
+                     </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default contacts">
+                    <div class="panel-heading">
+                        <h2>Connect With Me</h2>
+                    </div>
+                    <div class="panel panel-body">
+                    
+                            <a href="https://github.com/tabjr09" target="_blank">
+                                <img class="links" src="assets/images/github.png" alt="github">
+                            </a>
+   
+
+                        <a href="www.linkedin.com/in/thomas-brown-a302a370" target="_blank">
+                            <img class="links" src="assets/images/linkedin.png" alt="linkedin">
+                        </a>
                 
-                    <a href="https://github.com/tabjr09" target="_blank">
-                        <img class="links" src="assets/images/github.png" alt="github">
-                    </a>
-                    
-        
-                <a href="www.linkedin.com/in/thomas-brown-a302a370" target="_blank">
-                    <img class="links" src="assets/images/linkedin.png" alt="linkedin">
-                </a>
-        
-                <a href="https://gitlab.com/glbrotha" target="_blank">
-                    <img class="links" src="assets/images/gitlab.png" alt="gitlab">
-                </a>
-                    
-        </section>
+                        <a href="https://gitlab.com/glbrotha" target="_blank">
+                            <img class="links" src="assets/images/gitlab.png" alt="gitlab">
+                        </a>
 
-</body>
-<footer>@Copyright 2018 Thomas A. Brown</footer>
-</html>
+
+                    </div>
+                </div>
+
+            </div>
+          </div>
+       <!-- </div>-->
+    </div>
+
+<footer class="container-fluid text-center">
+        @Copyright 2018 Thomas A. Brown
+      </footer>
+  </body>
+  </html>
